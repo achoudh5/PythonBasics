@@ -5,6 +5,8 @@
 
 
 #Q= when I used A.getString() (in the main program, it gave me an error)
+# Q= use of if __name__=="__main__":
+#                   main()
 class A:
     def getString(self):
         a=raw_input("enter the string\n")
