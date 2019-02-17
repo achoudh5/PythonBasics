@@ -17,7 +17,7 @@ class A:
                         print c[j]
                         print "cpme"
                         (c[j-1],c[j])=(c[j],c[j-1])
-            print "lop"
+
             print c
 
 
