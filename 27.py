@@ -2,9 +2,10 @@
 
 class A:
     def ashu(self):
-        dict=[1,2,3,4,56,7,8,9,10]
-
-        z= map( lambda x:x**2 , filter(lambda x: x%2==0,dict) )
+        dict=[]
+        for i in range(1,21):
+            dict.append(i)
+        z= list(filter(lambda x: x%2==0,dict))
         print z
 def main():
     l = A()
