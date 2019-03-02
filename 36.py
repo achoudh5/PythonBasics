@@ -1,21 +1,25 @@
 import random
+import zlib
+import sys
 class Circle:
     def rec(self):
         print "hi"
         print "wassup"
-        while True:
-            #n = int(raw_input("enter the number:\n"))
-            if 60<random.random()*100<100:
-                print "hi"
-                print random.random()*100   #generates the random numbers from (0,1)
-            elif random.randint(5,10):
-                print "ji"
-                print random.randint(5,10)  # generates random numbers within the integer frame
-            else:
-                print "lp"
-                str= raw_input("Do you want to continue: y/n\n")
-                if str != 'y':
-                    break
+        s="hello world!hello nnnnnworld!hello world!hello world!"
+        t=zlib.compress(s,1)
+        print sys.getsizeof(s)
+        print sys.getsizeof(t)
+        print t
+        print zlib.decompress(t)
+        f=open('34.py','r')
+        text=f.read()
+        f.close()               #you have to close the files(memory leakage might be there)
+
+        with open('34.py','a') as d:  #better way to open files since you don't have to close file
+
+            print "these are the fice"
+            bio=d.read()
+        print bio
 
 def main():
     l = Circle()
