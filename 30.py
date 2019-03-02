@@ -15,7 +15,7 @@ class Circle:
 
         while True:
             l = (raw_input("enter the number"))
-            pattern='(\w+)@((\w+\.))+((com|net|edu))'
+            pattern='(\w+)@((\w+\.))+((com|net|edu))' #each bracket signifies one group
             r2=re.match(pattern,l)
             print r2.group(3)
 
