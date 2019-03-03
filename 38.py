@@ -1,4 +1,5 @@
 import random
+from random import shuffle
 import zlib
 import sys
 import timeit
@@ -6,13 +7,18 @@ class Circle:
     def rec(self):
         print "hi"
         print "wassup"
-        s=timeit.timeit('''def main():  
-    l = Circle()
+        q = [5, 6, 77, 45, 22, 12, 24]
+        x=[]
+        for i,y in enumerate(q):
+            if i%2!=0:
+                print x.append(y)
+        print x
 
-    # j=NewYorker()
 
-    l.rec()''')   #helps in measuring the time
-        print s
+
+
+
+
 
 
 def main():
