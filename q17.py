@@ -25,3 +25,19 @@ def main():
 
 if __name__=="__main__":
     main()
+D=0
+W=0
+while True:
+    d=0
+    a = raw_input("E\n")
+    d = a.split(' ')
+    print d
+    if d[0] =='D':
+        D += int(d[1])
+    else:
+        D -= int(d[1])
+    str= raw_input("Enter more value\n")
+    if str!='y':
+        break
+
+print D
